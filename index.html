@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="framework/css/font-awesome.css">
     <link rel="stylesheet" href="framework/css/highlightjs-themes/monokai.css">
     <link rel="stylesheet" href="framework/css/theme-llc.css">
-    <link rel="shortcut icon" href="framework/img/favicon.ico"> 
+    <link rel="shortcut icon" href="framework/img/favicon.ico">
 
     <!-- Workshop-specific styles -->
     <link rel="stylesheet" href="framework/css/workshop.css">
@@ -34,18 +34,42 @@
         <span class="title-bg">Intro to HTML & CSS</span><br>
         <span class="title-bg">Building a Multi-page website</span>
         </h1>
-        <h2><span>with</span> Instructor Name</h2>
+        <h2><span>with</span> Jenn Cooper</h2>
 
-        <img class="instructor-img" src="framework/img/profile-generic.jpg" alt="instructor name">
+        <img class="instructor-img" src="framework/img/jenn_cooper.jpg" alt="Jenn Cooper">
         <ul>
-        <li><i class="fa fa-envelope"></i><a href="mailto:">hello@email.com</li>
-        <li><i class="fa fa-desktop"></i><a href="#" target="_blank">mywebsite.com</a></li>
-        <li><i class="fa fa-twitter"></i><a href="http://twitter.com/" target="_blank">@twitter_name</a></li>
+        <li><i class="fa fa-envelope"></i><a href="mailto:cooper.jennl@gmail.com">cooper.jennl@gmail.com</li>
+        <li><i class="fa fa-desktop"></i><a href="http://jennifercooper.ca/" target="_blank">jennifercooper.ca</a></li>
+        <li><i class="fa fa-twitter"></i><a href="http://twitter.com/jncoops" target="_blank">@jncoops</a></li>
         </ul>
     </div>
     </header>
 
     <main>
+        <section class="slide">
+          <div class="image-container">
+            <img src="framework/img/mark-zuckerberg.jpg" alt="Mark Zuckerberg" />
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="image-container">
+            <img src="framework/img/crazy-programmer.gif" alt="Crazy Programmer" />
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="image-container">
+            <img src="framework/img/defeated-programmer.gif" alt="Defeated Programmer" />
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="image-container">
+            <img src="framework/img/cool-programmer.gif" alt="Cool Programmer" />
+          </div>
+        </section>
+
         <section class="slide centered project" data-markdown>
 ##Today's Project
 
@@ -127,12 +151,12 @@ To move web files from your computer to a server, an FTP program must be used (m
 
             <p>Web pages are generally built using 3 web languages:</p>
 
-            <p><strong>HTML (Hypertext Markup Language)</strong> is a <em>markup</em> language and is is used to define the content.</p>
-            
+            <p><strong>HTML (Hypertext Markup Language)</strong> is a <em>markup</em> language and is used to define the content.</p>
+
             <div class="example">
             <p>I'm just a paragraph.</p>
             </div>
-            
+
             <p><strong>CSS (Cascading Style Sheets)</strong> is a <em>stylesheet</em> language and is used to create the presentation and look of a site.</p>
 
             <div class="example css">
@@ -240,18 +264,18 @@ Tags describe the content that is inside of them, **not** what they look like.  
 
             <p><code>&lt;body&gt;</code> - All content to be displayed in the browser window, also known as the viewport, goes between the body tags.</p>
         </section>
-        
+
         <section class="slide title" data-markdown>
             #Organizing your files
             ##Creating web pages and file structures
         </section>
-        
+
         <section class="slide">
             <h2>Setting Up Our Work Flow</h2>
 
-            <p>Inside of the folder you downloaded today (<strong>llc-html-css-multi-page-site-master</strong>), there are many more folders and files that contain different content.</p>
+            <p>Inside of the folder you downloaded today (<strong>llc-html-css-multi-page-site</strong>), there are many more folders and files that contain different content.</p>
 
-    <pre><code>llc-html-css-multi-page-site-master
+    <pre><code>llc-html-css-multi-page-site
     |-- framework // Contains files needed for slide presentation. Do not edit!
     |-- project // Contains files for today's workshop.
         |-- css // Only CSS files here.
@@ -377,8 +401,8 @@ This is an example of an **absolute hyperlink**. It's "fully resolved" and start
 
 ```xml
 Visit &lt;a href="http://ladieslearningcode.com">Ladies Learning Code&lt;/a>.
-``` 
-Hyperlinks can also link to other pages within your own folder structure. The below is an example of a **relative path**. The path is relative to its place within the folder structure. If your HTML pages are within the same folder, they can be linked by using just the file name.
+```
+Hyperlinks can also link to other pages within your own folder structure. The link below is an example of a **relative path**. The path is relative to its place within the folder structure. If your HTML pages are within the same folder, they can be linked by using just the file name.
 
 ```xml
 &lt;a href="about.html">About Me&lt;/a>
@@ -525,7 +549,7 @@ The syntax for comments start with `&lt;!--` and ends with `--&gt;`.
         <section class="slide">
             <h2>Adding images</h2>
 
-            <p>Images are another example of a void element.  Just like links, image tags also requires an attribute to define the file path of the image file. However, it uses the <code>src</code> attribute (not <code>href</code>).  The value can be an absolute or relative path. The below is an example of an absolute path.</p>
+            <p>Images are another example of a void element.  Just like links, image tags also require an attribute to define the file path of the image file. However, it uses the <code>src</code> attribute (not <code>href</code>).  The value can be an absolute or relative path. The <code>src</code> below is an example of an absolute path.</p>
 
             <pre><code>&lt;img src="http://fillmurray.com/200/300"&gt;</code></pre>
 
